@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XF Store - Поиск</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon"> <!-- Логотип сайта -->
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>XF Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Поиск</a></li>
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Корзина (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Поле ввода поиска -->
+    <input type="text" class="search-input" id="searchInput" placeholder="Название игры">
+
+    <!-- Основная секция -->
+<main>
+    <section class="hero">
+        <div class="container">
+            <h2>Все игры</h2>
+            <div class="gallery" id="dataList">
+                <!-- Блоки с изображениями и кнопками "Подробнее" -->
+                <div class="game-item">
+                    <img src="mario.jpg" alt="Super Mario Bros">
+                    <a href="#" class="btn" onclick="openModal('gameModal1')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="zel.jpg" alt="Legend of Zelda">
+                    <a href="#" class="btn" onclick="openModal('gameModal2')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="capsule_616x353.jpg" alt="Fifa 25">
+                    <a href="#" class="btn" onclick="openModal('gameModal3')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="gta.jpg" alt="Grand Theft Auto 5">
+                    <a href="#" class="btn" onclick="openModal('gameModal4')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="Rectangle 83.png" alt="Need for Speed">
+                    <a href="#" class="btn" onclick="openModal('gameModal5')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="download.jpg" alt="Uncharted">
+                    <a href="#" class="btn" onclick="openModal('gameModal6')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="punk.jpg" alt="Cyberpunk 2077">
+                    <a href="#" class="btn" onclick="openModal('gameModal7')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="images.jpg" alt="Fortnite">
+                    <a href="#" class="btn" onclick="openModal('gameModal8')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="genshin.jpg" alt="Genshin Impact">
+                    <a href="#" class="btn" onclick="openModal('gameModal9')">Подробнее</a>
+                </div>
+                <div class="game-item">
+                    <img src="main.jpg" alt="Minecraft">
+                    <a href="#" class="btn" onclick="openModal('gameModal10')">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Модальные окна для каждой игры -->
+    <!-- Модальное окно для Super Mario -->
+    <div class="game-modal" id="gameModal1">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('gameModal1')">&times;</span>
+            <img src="mario.jpg" alt="Game Image" class="game-image">
+            <h3>Super Mario</h3>
+            <p>Классическая платформенная игра с Mario в главной роли. Спасите принцессу от Bowser в мире грибов и приключений!</p>
+            <p><strong>Цена:</strong> 2000 руб</p>
+            <p><strong>Системные требования:</strong></p>
+            <ul>
+                <li>OC: Windows 10 / macOS</li>
+                <li>Процессор: Intel Core i5</li>
+                <li>Память: 8 GB RAM</li>
+                <li>Графика: Integrated</li>
+            </ul>
+            <a href="buy.html?game=Super%20Mario" class="btn buy-btn">Купить</a>
+        </div>
+    </div>
+    <div class="game-modal" id="gameModal2">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal2')">&times;</span>
+        <img src="zel.jpg" alt="Game Image" class="game-image">
+        <h3>Legend of Zelda</h3>
+        <p>Эпическая приключенческая игра с героем Link, который отправляется в путешествие, чтобы спасти мир от злого колдуна Ganon.</p>
+        <p><strong>Цена:</strong> 2500 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 7 / macOS</li>
+            <li>Процессор: Intel Core i7</li>
+            <li>Память: 16 GB RAM</li>
+            <li>Графика: Nvidia GTX 1060</li>
+        </ul>
+        <a href="buy.html?game=Legend%20of%20Zelda" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal3">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal3')">&times;</span>
+        <img src="capsule_616x353.jpg" alt="Game Image" class="game-image">
+        <h3>FIFA 25</h3>
+        <p>Новейшая версия легендарной футбольной симуляции. Играйте за свою любимую команду и соревнуйтесь в самых престижных лигах мира.</p>
+        <p><strong>Цена:</strong> 3500 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10 / macOS</li>
+            <li>Процессор: Intel Core i5</li>
+            <li>Память: 8 GB RAM</li>
+            <li>Графика: Nvidia GTX 1050</li>
+        </ul>
+        <a href="buy.html?game=Fifa%2025" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal4">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal4')">&times;</span>
+        <img src="gta.jpg" alt="Game Image" class="game-image">
+        <h3>Grand Theft Auto 5</h3>
+        <p>Огромный открытый мир, где вы можете быть кем угодно — бандитом, полицейским или бизнесменом. GTA 5 предлагает множество миссий и свободу действий.</p>
+        <p><strong>Цена:</strong> 3000 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10 / macOS</li>
+            <li>Процессор: Intel Core i7</li>
+            <li>Память: 16 GB RAM</li>
+            <li>Графика: Nvidia GTX 1080</li>
+        </ul>
+        <a href="buy.html?game=GTA%205" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal5">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal5')">&times;</span>
+        <img src="Rectangle 83.png" alt="Game Image" class="game-image">
+        <h3>Need for Speed</h3>
+        <p>Гонка на грани возможного с высокоскоростными автомобилями. Выигрывай уличные гонки и улучшай свою машину.</p>
+        <p><strong>Цена:</strong> 2700 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10</li>
+            <li>Процессор: Intel Core i5</li>
+            <li>Память: 8 GB RAM</li>
+            <li>Графика: Nvidia GTX 1060</li>
+        </ul>
+        <a href="buy.html?game=Need%20for%20Speed" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal6">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal6')">&times;</span>
+        <img src="download.jpg" alt="Game Image" class="game-image">
+        <h3>Uncharted</h3>
+        <p>Погрузитесь в приключения с Дрейком, археологом, который расследует древние тайны, сталкиваясь с опасностями и раскрывая секреты прошлого.</p>
+        <p><strong>Цена:</strong> 3200 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10</li>
+            <li>Процессор: Intel Core i7</li>
+            <li>Память: 16 GB RAM</li>
+            <li>Графика: Nvidia GTX 1070</li>
+        </ul>
+        <a href="buy.html?game=Uncharted" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal7">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal7')">&times;</span>
+        <img src="punk.jpg" alt="Game Image" class="game-image">
+        <h3>Cyberpunk 2077</h3>
+        <p>Погрузитесь в мрачное будущее, играйте за персонажа V, исследуйте мегаполис Найт-Сити и станьте частью борьбы за выживание в мире технологий и преступности.</p>
+        <p><strong>Цена:</strong> 4500 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10</li>
+            <li>Процессор: Intel Core i9</li>
+            <li>Память: 32 GB RAM</li>
+            <li>Графика: Nvidia RTX 3080</li>
+        </ul>
+        <a href="buy.html?game=Cyberpunk%202077" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal8">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal8')">&times;</span>
+        <img src="images.jpg" alt="Game Image" class="game-image">
+        <h3>Fortnite</h3>
+        <p>Популярная многопользовательская онлайн-игра, где вам нужно выжить и бороться с другими игроками в мире, полном битв и построений.</p>
+        <p><strong>Цена:</strong> Бесплатно (Внутриигровые покупки)</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10 / macOS</li>
+            <li>Процессор: Intel Core i5</li>
+            <li>Память: 8 GB RAM</li>
+            <li>Графика: Nvidia GTX 1050</li>
+        </ul>
+        <a href="buy.html?game=Fortnite" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal9">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal9')">&times;</span>
+        <img src="genshin.jpg" alt="Game Image" class="game-image">
+        <h3>Genshin Impact</h3>
+        <p>Открытый мир, красивый аниме-стиль и эпическое приключение в мире Тейвата. Исследуйте его и сражайтесь с врагами, разгадывая загадки.</p>
+        <p><strong>Цена:</strong> Бесплатно (Внутриигровые покупки)</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 10 / macOS</li>
+            <li>Процессор: Intel Core i5</li>
+            <li>Память: 16 GB RAM</li>
+            <li>Графика: Nvidia GTX 1060</li>
+        </ul>
+        <a href="buy.html?game=Genshin%20Impact" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+    <div class="game-modal" id="gameModal10">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('gameModal10')">&times;</span>
+        <img src="main.jpg" alt="Game Image" class="game-image">
+        <h3>Minecraft</h3>
+        <p>Строительство, выживание и приключения в пиксельном мире Minecraft. Создавайте и исследуйте, стройте что угодно, сражайтесь с монстрами и добывайте ресурсы.</p>
+        <p><strong>Цена:</strong> 1200 руб</p>
+        <p><strong>Системные требования:</strong></p>
+        <ul>
+            <li>OC: Windows 7 / macOS</li>
+            <li>Процессор: Intel Core i3</li>
+            <li>Память: 4 GB RAM</li>
+            <li>Графика: Integrated</li>
+        </ul>
+        <a href="buy.html?game=Minecraft" class="btn buy-btn">Купить</a>
+    </div>
+</div>
+
+    <!-- Другие модальные окна для каждой игры в будущем -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 XF Store. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="search.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XF Store - Купить</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="icon" href="favicon (1).ico" type="image/x-icon"> <!-- Логотип сайта -->
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <h1>XF Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="search.html">Поиск</a></li>
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Корзина (0)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основная секция -->
+    <main>
+        <section class="buy-section">
+            <div class="container">
+                <h2>Оформить покупку</h2>
+                <div class="purchase-form">
+                    <form action="#" id="purchaseForm">
+                        <div class="form-group">
+                            <label for="game-name">Название игры</label>
+                            <input type="text" id="game-name" disabled> <!-- Название игры будет здесь -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Введите ваш email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="payment-method">Способ оплаты</label>
+                            <select id="payment-method" required>
+                                <option value="card">Карта</option>
+                                <option value="stp">СБП</option>
+                                <option value="paypal">PayPal</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn buy-btn">Купить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для успешной отправки -->
+    <div id="successModal" style="display:none;">
+        <p id="modalMessage">Данные успешно отправлены!</p>
+        <button onclick="closeModal('successModal')">Закрыть</button>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 XF Store. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
